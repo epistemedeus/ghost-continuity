@@ -1,0 +1,18 @@
+{
+  "schema": "ghost-continuity.client-manifest.v1",
+  "adapt": {
+    "ghost_content_url": "https://staging.example.invalid/ghost/api/content/",
+    "ghost_admin_url": "https://staging.example.invalid/ghost/api/admin/",
+    "content_key_env": "GHOST_CONTENT_KEY",
+    "webhook_secret_env": "GHOST_WEBHOOK_SECRET",
+    "customer_record_url": "https://catalog.example.invalid/records",
+    "accept_version": "v6.0"
+  },
+  "pinned": {
+    "events": ["post.published", "post.published.edited", "post.unpublished"],
+    "effect_rule": "SEMANTICS.md",
+    "ghost_version_tested": "6.73.0",
+    "ghost_commit": "5794cfd8daca61fd60cd8659acd6591ece3b7956"
+  },
+  "do_not_commit": ["content_key", "webhook_secret", "admin_key"]
+}

@@ -1,0 +1,32 @@
+ghost-continuity 0.1.0
+
+Requires Node.js 22. The offline acceptance command does not start Ghost and does not need credentials.
+
+  tar -xzf ghost-continuity-0.1.0.tar.gz
+  cd ghost-continuity
+  node --test job/test/behavior.test.mjs job/test/effect-id.test.mjs
+  node job/bin/demo.mjs
+  node job/bin/accept.mjs
+  node job/bin/compare.mjs --out /tmp/gc-sample-compare
+  node --test harness/interface.test.mjs
+  node harness/run-journeys.mjs --plane stub --out /tmp/gc-sample-stub
+
+Expect 7 job tests, demo text "acceptance pass (13 cases, 8 deployment steps)", and compare output comparison.json. compare exits 2 when --out is omitted. The stub report uses schema ghost-continuity.http-journey.v1, plane protocol-stub, installed_execution false.
+
+The direct poll is the path that still converges when a webhook never arrives. demo reports that native win on missed_webhook.
+
+Installed plane, only against a Ghost 6.73.0 you already run on loopback:
+
+  export GHOST_CONTINUITY_STAGE=installed
+  export GHOST_CONTINUITY_ADMIT=1
+  export GHOST_BASE_URL=http://127.0.0.1:2368
+  export GHOST_STAFF_EMAIL=...
+  export GHOST_STAFF_PASSWORD=...
+  export GHOST_WEBHOOK_SECRET=...
+  node harness/run-journeys.mjs --plane installed --out /tmp/gc-sample-installed
+
+Without those variables, or with a non-loopback URL, the command exits 3 before any request. It does not install or start Ghost. Use a webhook secret you choose for this run. The sample posts use the slug prefix gc-sample-.
+
+bash install/native-install.sh and bash install/clean-install.sh also exit 3 unless both admission variables are set. native-install.sh refuses when /tmp/ghost-continuity-sample already exists. This host's acceptance does not run those installers and does not pull the Ghost image.
+
+See README.md for withdrawal agreement, duplicate delivery, and restart behavior.

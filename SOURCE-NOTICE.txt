@@ -1,0 +1,20 @@
+ghost-continuity 0.1.0
+
+Reference integration tested with Ghost 6.73.0 synthetic posts. It keeps one public catalog row aligned with one public Ghost post.
+
+Licence
+  Files written for this sample are MIT. See LICENSE.
+  Ghost is not included. The contract was read from Ghost tag v6.73.0,
+  commit 5794cfd8daca61fd60cd8659acd6591ece3b7956, MIT,
+  Copyright (c) 2013-2026 Ghost Foundation.
+  Node.js is the runtime. Its standard library is not copied here.
+  @tryghost/admin-api is not installed. See job/LICENSES.md.
+
+Source
+  Repository: epistemedeus/neomorphic-io
+  Path: examples/ghost-continuity
+
+Configuration
+  Fixture keys and posts are synthetic. Supply your own values for a
+  deployment you control. Do not commit content keys, webhook secrets
+  or admin keys. Setup and acceptance commands are in COLD-INSTALL.txt.

@@ -1,0 +1,66 @@
+{
+  "schema": "ghost-continuity.ghost-pin.v1",
+  "product": "Ghost",
+  "version": "6.73.0",
+  "commit": "5794cfd8daca61fd60cd8659acd6591ece3b7956",
+  "tag": "v6.73.0",
+  "licence": "MIT",
+  "copyright": "Copyright (c) 2013-2026 Ghost Foundation",
+  "licence_url": "https://github.com/TryGhost/Ghost/blob/v6.73.0/LICENSE",
+  "accept_version_sent": "v6.0",
+  "content_version_observed_in_source": "v6.73",
+  "sources": [
+    {
+      "url": "https://ghost.org/move-to-ghost/",
+      "used": "Free importers and the statement that Ghost does not build or maintain third-party integrations."
+    },
+    {
+      "url": "https://docs.ghost.org/admin-api/",
+      "used": "Integration token: HS256 JWT, kid, aud /admin/, hex secret, five-minute exp."
+    },
+    {
+      "url": "https://docs.ghost.org/admin-api/posts/",
+      "used": "Post object fields and updated_at collision on writes back to Ghost. This specimen does not write posts."
+    },
+    {
+      "url": "https://docs.ghost.org/webhooks",
+      "used": "Event names. HTTP 2xx is success and the response body is discarded."
+    },
+    {
+      "url": "https://docs.ghost.org/admin-api/webhooks/",
+      "used": "Webhook resource. Sample api_version v6."
+    },
+    {
+      "url": "https://ghost.org/integrations/",
+      "used": "Directory check. No listed app was executed."
+    },
+    {
+      "url": "https://ghost.org/integrations/custom-integrations/",
+      "used": "Custom integration keys and outgoing webhooks."
+    },
+    {
+      "url": "https://github.com/TryGhost/Ghost/blob/5794cfd8daca61fd60cd8659acd6591ece3b7956/ghost/core/server/services/webhooks/webhook-trigger.js",
+      "used": "HMAC over raw JSON plus decimal milliseconds, and a 2 second request timeout. Source sets retry.limit to 5 outside test mode. Installed Ghost 6.73.0 uses got 16, whose default methods omit POST, so a failed POST was not retried. Duplicate delivery in that run used a second subscription."
+    },
+    {
+      "url": "https://github.com/TryGhost/Ghost/blob/5794cfd8daca61fd60cd8659acd6591ece3b7956/ghost/core/server/services/webhooks/serialize.js",
+      "used": "Payload shape post.current and post.previous. HTML and plaintext formats for posts."
+    }
+  ],
+  "not_installed": {
+    "name": "@tryghost/admin-api",
+    "version": "1.14.14",
+    "licence": "MIT",
+    "repository": "https://github.com/TryGhost/SDK.git",
+    "reason": "The specimen sends the documented HTTP requests with Node 22 crypto. The official client is a commodity SDK this job does not need."
+  },
+  "runtime": {
+    "platform": "node",
+    "version": "22.23.4",
+    "dependencies": []
+  },
+  "reads_used": ["GET /ghost/api/content/posts/"],
+  "admin_contract_checked_and_not_used_for_sync": ["GET /ghost/api/admin/posts/"],
+  "writes_to_ghost": false,
+  "live_site_contact": false
+}

@@ -1,0 +1,207 @@
+{
+  "schema": "ghost-continuity.archive-manifest.v1",
+  "version": "0.1.0",
+  "license": "MIT",
+  "members": [
+    {
+      "path": "COLD-INSTALL.txt",
+      "bytes": 1842,
+      "sha256": "ef15ab148c17fdbcbe304bdfd72705813e0444ebc6a76d786e06d32830ca6e03"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1114,
+      "sha256": "42b41d607eb19f5fb4bb8b8880109f12e0ad8963d7f7e96764358d5aaa675029"
+    },
+    {
+      "path": "LICENSES.md",
+      "bytes": 387,
+      "sha256": "1ab265d2d967c522825022b3197b974e0b0ca7011ca0c11ad2719c729a3fb3e4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4881,
+      "sha256": "ecca16331b7274bf981a8b84918aa86173ad554d4e51a051398d5d607c83419f"
+    },
+    {
+      "path": "SOURCE-NOTICE.txt",
+      "bytes": 827,
+      "sha256": "1980d671f8c41dbac977f0ae68aff9a48b4ee92c6d3cfd7603a296563e097b57"
+    },
+    {
+      "path": "harness/ghost-http.mjs",
+      "bytes": 1867,
+      "sha256": "682b96d295f420909c2eac229eb1b6b4c180a0363ab69bd28735e52b9b40ffbc"
+    },
+    {
+      "path": "harness/identities.mjs",
+      "bytes": 346,
+      "sha256": "64cb31644ece12cac981218607f8259ac9b32e44ed3ddd54f7aa68abe537bb77"
+    },
+    {
+      "path": "harness/installed.mjs",
+      "bytes": 39930,
+      "sha256": "c57f6ec4a53471312d0cd4c93e3479d2352ffbf837eda8e15b866c0881fb5cf9"
+    },
+    {
+      "path": "harness/interface.test.mjs",
+      "bytes": 5057,
+      "sha256": "f01859d3f7ef641d2c6eaa50ac013ac2255c68d9c637a3ae12469493066933fc"
+    },
+    {
+      "path": "harness/journeys.mjs",
+      "bytes": 17104,
+      "sha256": "d7a6f9b2ad064ee1b501df3a918737bf7813c056df9ce75b80314f0ea4a8195c"
+    },
+    {
+      "path": "harness/receiver-worker.mjs",
+      "bytes": 2981,
+      "sha256": "2a070c35204dbdab5cc31920ecd04e6cd22848d34d2969b09ca82af151512c26"
+    },
+    {
+      "path": "harness/receiver.mjs",
+      "bytes": 6321,
+      "sha256": "3e963e81b1720e01ac774f9c6f21ac2b4a2d8738c7b1db806370e0b38366db15"
+    },
+    {
+      "path": "harness/run-journeys.mjs",
+      "bytes": 2712,
+      "sha256": "957680cdb3cc72753412b208a6ecc92e9a45ce264abd8b49a8a7667614c9a061"
+    },
+    {
+      "path": "harness/store.mjs",
+      "bytes": 2163,
+      "sha256": "68072162024f6a36d0bd66c52fcae86abbe4831779f6f97c40314c33c688a4bc"
+    },
+    {
+      "path": "harness/wire.mjs",
+      "bytes": 10172,
+      "sha256": "fe146b417029f5c40221e171870456caa0be6d4c475f7745b3b768e90c8dc537"
+    },
+    {
+      "path": "install/clean-install.sh",
+      "bytes": 1291,
+      "sha256": "3b790469a10d29ed2ea4a12088e965e5ce98a04f05e8433ef064ac1a9f404dfc"
+    },
+    {
+      "path": "install/native-install.sh",
+      "bytes": 1895,
+      "sha256": "dc381e0674b3c21d314fd0ba796e922bbc009020620b1cfccd121b239fe69b80"
+    },
+    {
+      "path": "job/LICENSES.md",
+      "bytes": 1017,
+      "sha256": "75d1b700aef72da1121bac2ca13b56841af2dfea674eff90c5985e155322c55c"
+    },
+    {
+      "path": "job/README.md",
+      "bytes": 915,
+      "sha256": "e955d9f76c47552edae4c2052b4d5e7737b6469690f5df2d30fea65e19edeea7"
+    },
+    {
+      "path": "job/SEMANTICS.md",
+      "bytes": 8079,
+      "sha256": "8b203e12e1b9687b65ab9e30b0285f1911fe7b0d20cd5552960d31965607bc09"
+    },
+    {
+      "path": "job/bin/accept.mjs",
+      "bytes": 221,
+      "sha256": "e121c1506a17ab475d1d3bf4ed3a4cc58c89408a49412691e6805ae45eaa08b6"
+    },
+    {
+      "path": "job/bin/compare.mjs",
+      "bytes": 762,
+      "sha256": "b9734c999c0aaf981b4c74a1c687d89e9c14527dcc9f8abceff20a6eb4e6d2a7"
+    },
+    {
+      "path": "job/bin/demo.mjs",
+      "bytes": 639,
+      "sha256": "5ec4f2212bc806bff0d0716d142b89d4a39b2c92a4820ecdbd29c304304520a5"
+    },
+    {
+      "path": "job/contract/ghost-v6.73.json",
+      "bytes": 2811,
+      "sha256": "201956db347e42240ed9f01e7b5c4d9bfc284e9da74b89e6eddeecdadcdd871a"
+    },
+    {
+      "path": "job/deploy/client-manifest.example.json",
+      "bytes": 720,
+      "sha256": "052bd973e55ec1cd86eed3265e40877d6e1b0d94db087b7d73e4e54285b3a19c"
+    },
+    {
+      "path": "job/fixtures/posts.mjs",
+      "bytes": 2526,
+      "sha256": "6a6ed376d2d66f46d292bf46d39c116442fca022faf85a9a3c82bb898f384ab9"
+    },
+    {
+      "path": "job/fixtures/roles.json",
+      "bytes": 590,
+      "sha256": "d4de323e20908253a8ea066af045de6613d48e85c9b0e99bdf2b979eda97dd97"
+    },
+    {
+      "path": "job/src/destination.mjs",
+      "bytes": 1623,
+      "sha256": "c2823f7024b3146eb6a6add8219ac0fbd9857bcbb547dc469664927fcda44121"
+    },
+    {
+      "path": "job/src/direct/sync.mjs",
+      "bytes": 6681,
+      "sha256": "f1d0388ddd476d0811d6a5a29a030c10711ea98e2dad028145fbecf4bd34c940"
+    },
+    {
+      "path": "job/src/ghost-fixture.mjs",
+      "bytes": 3594,
+      "sha256": "f4329c09c9f9fc00f7b61485cef144b59cff37a44827024a54cd1a7d266470f9"
+    },
+    {
+      "path": "job/src/package/sync.mjs",
+      "bytes": 8610,
+      "sha256": "a0ce02e7deccb92c15a1c70bd541bb153e6c60d80f9d83eab7c6f6a4a15b5892"
+    },
+    {
+      "path": "job/src/service/cases.mjs",
+      "bytes": 13641,
+      "sha256": "419145e68b5accbe28cebff04c3415d9909ece3fc0bed6a39fdd59f23a2d10a6"
+    },
+    {
+      "path": "job/src/service/checklist.mjs",
+      "bytes": 1125,
+      "sha256": "ed09f7f0d9e4b8d345ae904c484b01a122a1e926a5c19b22fdc765859a25d316"
+    },
+    {
+      "path": "job/src/service/expectations.mjs",
+      "bytes": 8069,
+      "sha256": "bc8da7cc9e19435b8770fde22a174218077d87029f9211579a9fc202ebbf5030"
+    },
+    {
+      "path": "job/src/service/run-acceptance.mjs",
+      "bytes": 1135,
+      "sha256": "ced8fc9f55c394860873503edf0dd79e5e4775ec85010210a4bb51a6ca85390b"
+    },
+    {
+      "path": "job/src/service/run-compare.mjs",
+      "bytes": 1483,
+      "sha256": "18b505bfe17d6ba71dcf2e11204805d44a3ad052902da7ca5e1d30e0cb68c415"
+    },
+    {
+      "path": "job/src/signature.mjs",
+      "bytes": 1520,
+      "sha256": "ebf22b938f1cd06d805258c2388cbc8d7d9ba78ed289fe04be48d1b47a44cc7b"
+    },
+    {
+      "path": "job/src/token.mjs",
+      "bytes": 2028,
+      "sha256": "8470fbd8793f47caa6236b85947f56d528083be3dff351b4620e8828787e2b93"
+    },
+    {
+      "path": "job/test/behavior.test.mjs",
+      "bytes": 10516,
+      "sha256": "920f71be14e9371f1df4b6557b51e80244be2c8e0aa4f5bb6c88fd4022eb0dcf"
+    },
+    {
+      "path": "job/test/effect-id.test.mjs",
+      "bytes": 2763,
+      "sha256": "243d2c10fa5519e7a1f651a1193ea917b5ef324d0a6abec4a5168cb6f2e37749"
+    }
+  ]
+}

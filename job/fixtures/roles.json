@@ -1,0 +1,21 @@
+{
+  "schema": "ghost-continuity.roles.v1",
+  "publisher": {
+    "id": "publisher-synthetic-field-notes",
+    "name": "Synthetic Field Notes",
+    "owns": "Ghost posts",
+    "admin_origin": "http://synthetic.ghost.local"
+  },
+  "payer_agency": {
+    "id": "agency-evaluator",
+    "name": "Example Agency Evaluator",
+    "owns": "deployment and acceptance of this procedure",
+    "fee_in_this_run": "none"
+  },
+  "beneficiary": {
+    "id": "beneficiary-northwind-catalog",
+    "name": "Northwind Catalog",
+    "owns": "the catalog rows",
+    "destination": "disposable in-process mock"
+  }
+}
